@@ -13,6 +13,24 @@ This script provides a command-line interface (CLI) to manage Zscaler Private Ac
 
 This project and script are provided "as is", without warranty of any kind, express or implied. The author is not responsible for any damage, data loss, or consequences resulting from the use of this script. You are solely responsible for how you use this tool and for verifying any changes it makes to your environment.
 
+## Architecture Overview
+
+In Zscaler Private Access (ZPA), the hierarchy for Application Segments is structured as follows:
+
+```text
+[ App Segment Group ]
+          │
+          ├────────► [ App Segment 1 ] ────────► [ Server Group A ]
+          │                                  └─► [ Server Group B ]
+          │
+          ├────────► [ App Segment 2 ] ────────► [ Server Group C ]
+          │
+          └────────► [ App Segment N ] ────────► [ Server Group N ]
+```
+- **App Segment Group**: A logical grouping of one or more Application Segments.
+- **App Segment**: Represents the application itself, defined by FQDNs or IP addresses.
+- **Server Group**: A group of servers where the application is hosted. An App Segment can be tied to multiple Server Groups.
+
 ## Prerequisites
 
 -   Python 3.6+
