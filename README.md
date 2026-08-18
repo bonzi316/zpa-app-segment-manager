@@ -5,8 +5,11 @@ This script provides a command-line interface (CLI) to manage Zscaler Private Ac
 ## Features
 
 -   **List Application Segments**: View all configured Application Segments in your ZPA tenant.
+-   **List Segment & Server Groups**: Helper actions to easily retrieve IDs required for creating new application segments.
 -   **Add Application Segments**: Create a new Application Segment with specified FQDNs, a segment group, and server groups.
 -   **Update Application Segments**: Add new FQDNs or wildcards to an existing Application Segment.
+-   **Remove FQDNs**: Remove specific FQDNs from an existing Application Segment.
+-   **Custom Environment Support**: Use a specific `.env` file via the `-e` flag for managing multiple tenants.
 -   **Verbose Logging**: Enable detailed logging for debugging purposes.
 
 ## Disclaimer
