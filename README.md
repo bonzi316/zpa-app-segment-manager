@@ -105,7 +105,7 @@ export ZSCALER_CLIENT_ID="YOUR_API_CLIENT_ID"
 # The Client Secret from your ZPA API key
 export ZSCALER_CLIENT_SECRET="YOUR_API_SECRET"
 
-# Your Zscaler vanity domain (e.g., api.private.zscaler.com)
+# Your Zscaler vanity domain Zscaler Authentication Service domain (e.g., vanity_domain.zslogin.net)
 export ZSCALER_VANITY_DOMAIN="ZSLOGIN DOMAIN"
 
 # Your ZPA Customer ID (or use ZSCALER_CUSTOMER_ID)
