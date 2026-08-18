@@ -17,10 +17,10 @@ This project and script are provided "as is", without warranty of any kind, expr
 
 -   Python 3.6+
 -   A ZPA tenant.
--   ZPA API Credentials with permissions to read and write Application Segments. You will need:
+-   ZPA API Credentials with permissions to read and write Application Segments. For instructions on creating these, refer to the [Zscaler API Getting Started Guide](https://automate.zscaler.com/docs/getting-started/getting-started). Note that when [adding an API client](https://help.zscaler.com/authentication-service/adding-api-client), you must choose the **Secret** authentication method for this script. You will need:
     -   `Client ID`
     -   `Client Secret`
-    -   `Customer ID`
+    -   `Customer ID` (AKA ZPA Account ID)
     -   `Vanity Domain` (e.g., `api.private.zscaler.com`)
 
 ## Setup and Installation
@@ -29,11 +29,11 @@ Follow these steps to set up the script and its environment.
 
 ### 1. Clone the Repository
 
-If your script is part of a git repository, clone it. Otherwise, save the script and its `utils` directory in a new project folder.
+Clone the project from GitHub:
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone https://github.com/bonzi316/zpa-app-segment-manager.git
+cd zpa-app-segment-manager
 ```
 ### Project Structure
 
